@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.2.2"  // Версия Gradle Plugin для Android
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20"  // Версия Kotlin Plugin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
